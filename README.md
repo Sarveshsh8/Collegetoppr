@@ -56,13 +56,13 @@ DATASET -
 14. Conversion of models using openvino to run the inference
   !mo --saved_model_dir /content/drive/MyDrive/FREELANCE/outputcustom_cnnsimple1_0629/ --input_shape "[1,200,200,3]
   
-  CONVERSION OF .PB files to .xml and .bin files (i.e OPEN VINO RUNTIME)
-15. Using the openvino format , i achieved a inference time of i.e
+15. CONVERSION OF .PB files to .xml and .bin files (i.e OPEN VINO RUNTIME)
+16. Using the openvino format , i achieved a inference time of i.e
      IR model in OpenVINO Runtime/CPU: 0.0086 seconds per image, FPS: 116.80
-16. Tensorflow model vs Open Vino
-16a. Tensorflow - Inference - 0.5 fps | modelsize= 80 MB
-16b. Tensorflowlite - Inference - 5 fps | modelsize = 20 MB
-16c. Openvino   - Inference - 116 FPS | modelsize = 22 KB
+17. Tensorflow model vs Open Vino
+17a. Tensorflow - Inference - 0.5 fps | modelsize= 80 MB
+17b. Tensorflowlite - Inference - 5 fps | modelsize = 20 MB
+17c. Openvino   - Inference - 116 FPS | modelsize = 22 KB
 
 
 Tensorflow flow model was pretty slow , i.e 5 fps or less in terms of giving the prediction.
