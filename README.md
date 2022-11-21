@@ -60,9 +60,9 @@ DATASET -
 16. Using the openvino format , i achieved a inference time of i.e
      IR model in OpenVINO Runtime/CPU: 0.0086 seconds per image, FPS: 116.80
 17. Tensorflow model vs Open Vino
-17a. Tensorflow - Inference - 0.5 fps | modelsize= 80 MB
-17b. Tensorflowlite - Inference - 5 fps | modelsize = 20 MB
-17c. Openvino   - Inference - 116 FPS | modelsize = 22 KB
+18. Tensorflow - Inference - 0.5 fps | modelsize= 80 MB
+19. Tensorflowlite - Inference - 5 fps | modelsize = 20 MB
+20. Openvino   - Inference - 116 FPS | modelsize = 22 KB
 
 
 Tensorflow flow model was pretty slow , i.e 5 fps or less in terms of giving the prediction.
