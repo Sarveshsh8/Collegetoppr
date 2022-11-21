@@ -52,19 +52,6 @@ DATASET -
 11. The .pb files were converted to onnx format using tf2onnx package.
 12. Results:
    !python3 -m onnxsim '/content/drive/MyDrive/FREELANCE/onnx/custom.onnx' "/content/drive/MyDrive/FREELANCE/onnx/custom_sim.onnx" --input-shape    1,200,200,3
-┏━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
-┃            ┃ Original Model ┃ Simplified Model ┃
-┡━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩
-│ Add        │ 2              │ 0                │
-│ Conv       │ 1              │ 1                │
-│ Gemm       │ 0              │ 2                │
-│ MatMul     │ 2              │ 0                │
-│ MaxPool    │ 1              │ 1                │
-│ Relu       │ 2              │ 2                │
-│ Reshape    │ 1              │ 1                │
-│ Transpose  │ 2              │ 2                │
-│ Model Size │ 76.6MiB        │ 76.6MiB          │
-└────────────┴────────────────┴──────────────────┘
 13. ONNX Models can be used to convert to any format.
 14. Conversion of models using openvino to run the inference
   !mo --saved_model_dir /content/drive/MyDrive/FREELANCE/outputcustom_cnnsimple1_0629/ --input_shape "[1,200,200,3]
